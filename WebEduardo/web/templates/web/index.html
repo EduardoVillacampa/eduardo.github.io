@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>HuescaTelecom</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css' %}">
+</head>
+<body>
+    <div id="linea"></div> 
+    <div id="header">
+        <div id="centro1">
+            <div id="logo">
+                <h2>HuescaTelecom</h2>
+                <p>Servicios de telecomunicaciones</p>
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quiensomos.html">Quien somos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="movistar.html">Movistar</a></li>
+                    <li><a href="clientes.html">Acceso clientes</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!--termina el header-->
+
+    <div id="presentacion">
+        <div id="centro2">
+            <div id="izquierda">
+                <h2>Bienvenidos a mi web</h2>
+                <p class="descripcion-pres">Especialistas en despliegue y mantenimiento 
+                de instlaciones de telecomunicaciones</p>
+                <button class="boton">Más información aquí</button>
+            </div>
+            <div id="derecha">
+                <img src="{% static 'web/descripcion.png' %}" class="img1">
+            </div>
+        </div>
+
+    <div id="contenidos">
+        <div id="centro3">
+            <div id="izquierda">
+                <h3>Bienvennidos a mi web</h3>
+                <p class="descripcion">
+                    En HuescaTelecom ofrecemos soluciones tecnológicas
+                    para nuestros clientes, tanto particulares como empresas.
+                    <br> <br>
+                    Desde 1980, somos pioneros en instalaciones de telecomunicaciones 
+                    en la provincia de Huesca.
+                </p>    
+                <div id="imagenes">
+                    <img src="{% static 'web/repetidor.png' %}" class="img-servicios">
+                    <img src="{% static 'web/repetidor2.jpg' %}" class="img-servicios">
+                    <img src="{% static 'web/repetidor3.jpg' %}" class="img-servicios">
+                </div>
+            </div>  
+            <div id="derecha">
+                <h3>Últimas novedades</h3>
+                <article>
+                    <h4>Título 1</h4>
+                    <p>
+                        Breve descripcin del artículo
+                    </p>
+                    <a href="" class="leer-mas">Leer más</a>
+                </article>
+                <article>
+                    <h4>Título 2</h4>
+                    <p>
+                        Breve descripcin del artículo
+                    </p>
+                    <a href="" class="leer-mas">Leer más</a>
+                </article>
+                <article>
+                    <h4>Título 3</h4>
+                    <p>
+                        Breve descripcin del artículo
+                    </p>
+                    <a href="" class="leer-mas">Leer más</a>
+                </article>
+
+            </div> 
+        </div>
+    </div>
+
+    <div id="pie">
+        <div id=centro-pie>
+            <p>
+                (c)Todos los derechos reservados. Diseñado por 
+                <a href="https://github.com/EduardoVillacampa/eduardo.github.io" class="github"> Eduardo Villacampa</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
