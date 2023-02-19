@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>HuescaTelecom</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css' %}">
+</head>
+<body>
+    <div id="linea"></div> 
+    <div id="header">
+        <div id="centro1">
+            <div id="logo">
+                <h2>HuescaTelecom</h2>
+                <p>Servicios de telecomunicaciones</p>
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li><a href={% url 'inicio' %}>Inicio</a></li>
+                    <li><a href="quiensomos.html">Quien somos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="https://www.movistar.es/Privada/DesafioUnico/">Movistar</a></li>
+                    <li><a href={% url 'products' %}>Productos</a></li>
+                    
+                    {% if request.user.is_authenticated %}
+                        <li><a href="{% url 'exit' %}">Salir</a></li>
+                    {% else %}
+                        <li><a href="{% url 'login' %}">Ingresar</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+
+        <h3>Productos</h3>
+
+        <p class="descripcion-pagina texto-quiensomos">Producto1</p>
+        <p class="descripcion-pagina texto-quiensomos">Producto2</p>
+        <p class="descripcion-pagina texto-quiensomos">Producto3</p>
+        <p class="descripcion-pagina texto-quiensomos">Producto4</p>
+
+    </div><!--termina el header-->
+
+
