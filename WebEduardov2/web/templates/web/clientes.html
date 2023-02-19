@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>HuescaTelecom</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css' %}">
+</head>
+<body>
+    <div id="linea"></div> 
+    <div id="header">
+        <div id="centro1">
+            <div id="logo">
+                <h2>HuescaTelecom</h2>
+                <p>Servicios de telecomunicaciones</p>
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quiensomos.html">Quien somos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="https://www.movistar.es/Privada/DesafioUnico/">Movistar</a></li>
+                    <li><a href="clientes.html">Acceso clientes</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	<body> 	
+		<h1 style="text-align: center;">ACCEDER A LA PÁGINA WEB (EN DESARROLLO)</style></h1>
+		<form style="text-align: center;">
+			<input style="text-align: center;" type="text" placeholder="Nombre" name="nombre">
+			<input style="text-align: center;" type="password" placeholder="Contraseña" name="contraseña">
+			<div>
+				<strong>Entrar como:</strong>
+				<input name="modo" type="radio" value="usuario">Cliente
+				<input name="modo" type="radio" value="administrador">Administrador
+				<input name="modo" type="radio" value="usuario">Trabajador
+				<p style="text-align: center;"><strong>Link GitHub</strong></p>
+		</form>
+		<p><img src="imagenes/git.png" alt="description" width="100" height="48" /></p>
+	</body>
+</html>

@@ -1,0 +1,295 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'calibri light';
+
+}
+
+#linea{
+    width: 100%;
+    height: 5px;
+    background:#086a87;
+}
+
+#header{
+    width: 100%;
+    height: 90px;
+    background: #0b2f3a;
+}
+
+#header #centro1{
+    width: 800px;
+    height: auto;overflow: hidden;
+    border: 0px solid; 
+    margin:auto;
+}
+
+#header #centro1 #logo{
+    width: 200px; border: 0px solid;
+    float: left;
+}
+
+#header #centro1 #logo h2, p{
+    color: #fff;
+
+}
+
+#header #centro1 #logo p{
+    margin-top: -20px;
+}
+/*------------menu-------------*/
+
+#header #menu{
+    width: 580px;
+    height: auto; overflow: hidden;
+    border: 0px solid;
+    float: right;
+    margin-top: 40px;
+    text-align: right;
+}
+
+#header #menu ul li{
+    display: inline-block;
+}
+
+#header #menu ul li a{
+    color: #04b4ae;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin: 0px 4px;
+}
+#header #menu ul li a:hover{
+    background: #0a2a29;
+}
+
+/*------------presentacion---------------------*/
+
+#presentacion{
+    width: 100%;
+    height: auto; overflow: hidden;
+    background: #064154;
+}
+
+#presentacion #centro2{
+    width: 800px;
+    margin: auto;
+}
+
+#presentacion #centro2 #izquierda{
+    width: 290px;
+    border: 0px solid;
+    float: left;
+}
+#presentacion #centro2 #izquierda h2{
+    color:#fff;
+    font-weight: lighter;
+}
+
+.descripcion-pres{
+    color: #04b4ae;
+    text-align: left;
+}
+
+.boton{
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.boton:hover{
+    background: #e6e6e6;
+    color: #0b651e;
+}
+
+#presentacion #centro2 #derecha{
+    width: 490px;
+    height: auto; float: right;
+}
+
+.img1{
+    width: 450px;
+    height: 180px;
+    border: 1px solid #088a85;
+    margin: 20px 0px;
+    float: right;
+}
+/*------------contenidos--------------*/
+#contenidos{
+    background: #f2f2f2;
+    width: 100%;
+    height: auto; overflow: hidden;
+}
+
+#contenidos-paginas{
+    background: #f2f2f2;
+    padding: 0px 0px 20px 0px;
+}
+#contenidos #centro3{
+    width: 800px;
+    margin: auto; border: 0px solid; height: auto; overflow: hidden;
+    text-align: center;
+}
+#contenidos #centro3 #izquierda{
+    width: 390px;
+    height: auto; overflow: hidden;
+    border: 0px solid;
+    float: left;
+}
+
+#contenidos #centro3 #izquierda h3{
+    color: #0b615e;
+}
+#contenidos #centro3 #izquierda .descripcion{
+    text-align: left; color: #6e6e6e;
+}
+
+.img-servicios{
+    width: 120px; height: 100px; display: inline-block;
+    padding: 2px; border: 1px solid #6e6e6e;
+}
+
+/*------contenidos derecha------*/
+#contenidos #centro3 #derecha{
+    width: 390px;
+    height: auto; overflow: hidden;
+    border: 0px solid;
+    float: right;
+}
+
+#contenidos #centro3 #derecha h3{
+    text-align: left;
+    font-size: 22px;
+    color: #0b615e;  
+}
+
+#contenidos #centro3 #derecha article{
+    width: 100%;
+    height: auto; overflow: hidden; 
+    margin-top: -30px; 
+    margin-bottom: 20px; 
+}
+
+#contenidos #centro3 #derecha article{
+    text-align: left; font-size: 15px;
+}
+#contenidos #centro3 #derecha article p{
+    color: #6e6e6e; text-align: left;
+    margin-top: -22px;
+    
+}
+
+.leer-mas{
+    padding: 4px 10px;
+    background:#086a87;
+    text-decoration: none;
+    float: left;
+    border-radius: 5px;
+    color:#fff; border: 0px;
+    margin-top: -15px;
+}
+
+/*---------------pie de pagina----------------*/
+#pie{
+    width: 100px;
+    height: 90px;
+    background: #064154;
+}
+#pie #centro-pie{
+    width: 800px;
+    height: auto;
+    overflow: auto;
+    background: #064154;
+}
+
+.github{
+    color:#fff;
+    text-decoration: none;
+}
+
+.github:hover{
+    text-decoration: underline;
+}
+/* pagina quien somos */
+#centro3{
+    width: 800px;
+    margin: auto; border: 0px solid; height: auto; overflow: hidden;
+    text-align: center;
+}
+
+.encabezados{
+    font-family: 'arial black';
+    font-size: 90px;
+}
+.t1{
+    color: #424242;
+}
+
+.t2{
+    color: #0489b1
+}
+
+
+.descripcion-pagina{
+    color: #848484;
+}
+
+.texto-quiensomos{
+    text-align: left;
+}
+
+.img-quiensomos{
+    float: left;
+    width: 450px;
+    height: 180px;
+    
+}
+
+.sedes{
+    text-align: left;
+
+}
+/* servicios */
+
+.servicios{
+    font-family: 'arial black';
+    color:#424242;
+}
+
+#domotica{
+    width: 250px;
+    height: 300px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.img-servicios{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    padding: 2px;
+
+}
+#mantenimiento{
+    width: 250px;
+    height: 300px;
+    border: 1px solid #ccc;
+    float: left;
+}
+#movistar{
+    width: 250px;
+    height: 300px;
+    border: 1px solid #ccc;
+    float: left;
+}
+#cctv{
+    width: 250px;
+    height: 300px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+
+
+
+

@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>HuescaTelecom</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css' %}">
+</head>
+<body>
+    <div id="linea"></div> 
+    <div id="header">
+        <div id="centro1">
+            <div id="logo">
+                <h2>HuescaTelecom</h2>
+                <p>Servicios de telecomunicaciones</p>
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quiensomos.html">Quien somos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="https://www.movistar.es/Privada/DesafioUnico/">Movistar</a></li>
+                    <li><a href="clientes.html">Acceso clientes</a></li>
+                </ul>
+            </div>
+        </div>
+    </div><!--termina el header-->
+
+
+    <div id="contenidos-paginas">
+        <div id="centro3">
+            <h2>
+                <em class="encabezados t1">Servicios</em>
+                <br>
+                <em class="encabezados t1">e</em>
+                <br>
+                <em class="encabezados t2">Instalaciones</em>
+            </h2>
+            <p class="descripcion-pagina texto-servicios">
+            En HuescaTelecom ofrecemos distintos servicios:  
+            </p>
+            <hr>
+            <div id="contenido-servicios">
+                <div id="domotica" class="servicios">
+                    <img src="{% static 'web/domo.jpg' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Domótica</em>
+                    </h2>   
+                </div>
+                
+                <div id="mantenimiento" class="servicios">
+                    <img src="{% static 'web/mantenimiento.jpg' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Reparación de equipos</em>
+                    </h2>   
+                </div>
+                <div id="cctv" class="servicios">
+                    <img src="{% static 'web/cctv.jpg' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Diseño CCTV</em>
+                    </h2>
+                </div>
+                <div id="movistar" class="servicios">
+                    <img src="{% static 'web/movistar.jpg' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Distribuidor Movistar</em>
+                    </h2>    
+                </div>
+                <div id="radio" class="servicios">
+                    <img src="{% static 'web/radio.jpg' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Instalaciones radiofrecuencia</em>
+                    </h2>    
+                </div>
+                <div id="teleco" class="servicios">
+                    <img src="{% static 'web/teleco.jpg' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Instalaciones telecomunicaciones</em>
+                    </h2>    
+                </div>
+                <div id="gps" class="servicios">
+                    <img src="{% static 'web/flotasgps.jpg' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Flotas GPS</em>
+                    </h2>    
+                </div>
+                <div id="seguridad" class="servicios">
+                    <img src="{% static 'web/seguridad.jpeg' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Seguridad y control de accesos</em>
+                    </h2>    
+                </div>
+                <div id="ciberseguridad" class="servicios">
+                    <img src="{% static 'web/ciberseguridad.jpg' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Soluciones ciberseguridad</em>
+                    </h2>    
+                </div>
+                
+            </div>
+             
+        </div>
+    </div>
+    
+    <div id="pie">
+        <div id=centro-pie>
+            <p>
+                (c)Todos los derechos reservados. Diseñado por 
+                <a href="https://github.com/EduardoVillacampa/eduardo.github.io" class="github"> Eduardo Villacampa</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
