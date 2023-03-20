@@ -1,7 +1,0 @@
-{% extends 'core/basequiensomos.html' %}
-{% block content %}                  
-{% if request.user.is_authenticated %}
-<hr>
-<h3>Usted ha iniciado sesión como: {{ user.username | upper }}, !Bienvenido!</h3>
-{% endif %}
-{% endblock %}
