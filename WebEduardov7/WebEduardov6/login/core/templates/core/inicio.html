@@ -1,8 +1,0 @@
-{% extends 'core/base.html' %}
-{% block content %}                  
-{% if request.user.is_authenticated %}
-<hr>
-<h3>Esta es la página principal de HuescaTelecom. Usted ha iniciado sesión como: {{ user.username | upper }}, !Bienvenido!</h3>
-
-{% endif %}
-{% endblock %}
