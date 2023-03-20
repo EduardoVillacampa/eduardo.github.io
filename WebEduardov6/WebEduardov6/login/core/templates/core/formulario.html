@@ -1,0 +1,8 @@
+{% extends 'core/baseformulario.html' %}
+{% block content %}
+{% if request.user.is_authenticated %}
+<div id="contenidos-paginas">
+<h4>Bienvenido {{ user.username | upper }}</h4>
+</div>
+{% endif %}
+{% endblock %}
