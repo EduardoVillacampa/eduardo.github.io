@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>HuescaTelecom</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css' %}">
+</head>
+<body>
+    <div id="linea"></div> 
+    <div id="header">
+        <div id="centro1">
+            <div id="logo">
+                <h2>HuescaTelecom</h2>
+                <p>Servicios de telecomunicaciones</p>
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li><a href={% url 'inicio' %}>Inicio</a></li>
+                    <li><a href={% url 'quiensomos' %}>Quien somos</a></li>
+                    <li><a href={% url 'servicios' %}>Servicios</a></li>
+                    <li><a href="https://www.movistar.es/Privada/DesafioUnico/">Movistar</a></li>
+                    <li><a href={% url 'products' %}>Productos</a></li>
+                    <li><a href={% url 'formulario' %}>Área Clientes</a></li>
+                    {% if request.user.is_authenticated %}
+                        <li><a href="{% url 'exit' %}">Salir</a></li>
+                    {% else %}
+                        <li><a href="{% url 'login' %}">Ingresar</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+        <div id="contenidos-paginas"> 
+            <br>
+            <br>
+            <br>
+            <h3>Productos disponibles:</h3>
+       
+            <div id="contenido-servicios">
+                <div id="domotica" class="servicios">
+                    <img src="{% static 'core/descarga.png' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Sin existencias</em>
+                    </h2>   
+                </div>
+                
+                <div id="mantenimiento" class="servicios">
+                    <img src="{% static 'core/descarga.png' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Sin existencias</em>
+                    </h2>   
+                </div>
+                <div id="cctv" class="servicios">
+                    <img src="{% static 'core/descarga.png' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Sin existencias</em>
+                    </h2>
+                </div>
+                <div id="movistar" class="servicios">
+                    <img src="{% static 'core/descarga.png' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Sin existencias</em>
+                    </h2>    
+                </div>
+                <div id="radio" class="servicios">
+                    <img src="{% static 'core/descarga.png' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Sin existencias</em>
+                    </h2>    
+                </div>
+                <div id="teleco" class="servicios">
+                    <img src="{% static 'core/descarga.png' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Sin existencias</em>
+                    </h2>    
+                </div>
+                <div id="gps" class="servicios">
+                    <img src="{% static 'core/descarga.png' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Sin existencias</em>
+                    </h2>    
+                </div>
+                <div id="seguridad" class="servicios">
+                    <img src="{% static 'core/descarga.png' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Sin existencias</em>
+                    </h2>    
+                </div>
+                <div id="ciberseguridad" class="servicios">
+                    <img src="{% static 'core/descarga.png' %}" class="img-servicios">
+                    <h2>
+                        <em class="servicios-text">Sin existencias</em>
+                    </h2>    
+                </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br> <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        {% block content %}{% endblock %}
+        <div id="pie">
+            <div id=centro-pie>
+                <p>
+                    (c)Todos los derechos reservados. Diseñado por 
+                    <a href="https://github.com/EduardoVillacampa/eduardo.github.io" class="github"> Eduardo Villacampa</a>
+                </p>
+                <b>Contacta con nosotros: huescatelecomcontacto@gmail.com // 974654322</b>
+            </div>
+        </div>
+
+    </div><!--termina el header-->
+
+</body>
+</html>
