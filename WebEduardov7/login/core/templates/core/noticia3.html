@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>HuescaTelecom</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css' %}">
+</head>
+<body>
+    <div id="linea"></div> 
+    <div id="header">
+        <div id="centro1">
+            <div id="logo">
+                <h2>HuescaTelecom</h2>
+                <p>Servicios de telecomunicaciones</p>
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="quiensomos.html">Quien somos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="https://www.movistar.es/Privada/DesafioUnico/">Movistar</a></li>
+                    <li><a href={% url 'products' %}>Productos</a></li>
+                    <li><a href={% url 'formulario' %}>Área clientes</a></li>
+                    {% if request.user.is_authenticated %}
+                        <li><a href="{% url 'exit' %}">Salir</a></li>
+                    {% else %}
+                        <li><a href="{% url 'login' %}">Ingresar</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div><!--termina el header-->
+
+    <div id="linea"></div> 
+    <div id="contenidos-paginas">
+        <div id="centro3">
+            <h2>
+               Día de Internet Seguro: ¿puede sufrir España un ciberataque como el de Italia?
+            </h2>
+            <p>
+                <img src="{% static 'core/not3.jpg' %}" class="img.quiensomos">
+            </p>
+            <p class="text-justify">
+                A veces toca resignarse. Las cartas que nos han repartido en el juego de la vida nos obligan a cosas como aprender a convivir con un virus que ya ha matado a casi 7 millones de personas en todo el mundo y a navegar por un universo digital en el que el mal acecha en cada esquina. Afortunadamente, para aquellos que no estén dispuestos a vivir aislados entre cuatro paredes analógicas y quieran seguir jugando, la baraja de nuestro día a día incluye varios comodines que, como las vacunas, nos protegen parcialmente de las infecciones informáticas.
+                <br> <br>
+                A nivel usuario, la mano ganadora es la del principio de precaución. Nunca pinche un enlace si no está seguro de que es auténtico. Nunca comparta sus datos personales si no tiene la certeza de quién es su interlocutor. Actualice sus sistemas que siempre el fabricante se lo requiera. Y, sobre todo, nunca peque de ingenuo, porque el peligro siempre está ahí, como demuestra el hecho de que, mientras celebramos el Día Internacional de Internet Seguro, Italia sigue sumida en un ataque ransomware a gran escala, cuyo impacto se ha expandido incluso por EEUU, Francia, Finlandia y Canadá.
+                <br> <br>
+                Los ciberdelincuentes saben que hay mucho dinero en el bote. En 2018 y tras un crecimiento exponencial desde 2001, las pérdidas económicas por ciberataques rozaron los 3.000 millones de dólares a nivel global, según el Foro Económico Mundial. Solo tres años después, en 2021, los costes ya se acercaban a los 7.000 millones de dólares, según el FBI. De acuerdo con esta tendencia, Cybercrime Magazine calcula que para 2025 la cifra podría ascender a los 10.500 billones de dólares en 2025. Si esto sucede, los daños causados por los ciberdelincuentes se alzarían como la tercera economía del mundo, solo por detrás de los PIB de EEUU y China.
+                <br> <br>
+                Por eso no es de extrañar que prácticamente no haya día en el que alguien no caiga en uno de sus órdagos: lo hemos visto en Ucrania, en el Instituto Nacional de Salud de Reino Unido y hasta en el propio Gobierno de España. La lista de víctimas es casi tan interminable como la de sus estrategias para hacernos picar. De hecho, aunque los casos más mediáticos se deban a sofisticadas herramientas como el software de espionaje Pegasus y a bandas criminales organizadas como Conti, en realidad ya ni siquiera hace falta ser experto en informática para sembrar el caos digital.
+                <br> <br>
+                Además de los servicios de hackeo profesional que se ofertan en la Internet profunda cual anuncios de fontanería, la inteligencia artificial (IA) ha eliminado la apuesta mínima para empezar jugar gracias a las herramientas automatizadas, que permiten a cualquiera lanzar sus propios ataques. Si las IA generativas han democratizado la creación de ilustraciones, los lucrativos hackeos no iban a quedarse atrás. Y la cosa va a peor, como demuestra el hecho de que las estafas informáticas hayan crecido un 455% en los últimos 6 años en nuestro país.
+                <br> <br>
+                Aunque, por supuesto, no somos la excepción. Mire la tabla que mire, “en el mundo de la ciberseguridad hay algo seguro: que los hackeos siempre van a más”, afirma el análisis del panorama cibernético para 2023 de MIT Technology Review. La única buena noticia es que España lleva años aprendiéndose las reglas del juego y poco a poco ha ido convirtiéndose en uno de los principales players en ciberseguridad a nivel mundial.
+                <br> <br>
+                Aquí no vamos de farol. A pesar de que en 2021 casi el 95% de las empresas españolas sufrieron un incidente informático de carácter grave , según Deloitte, en solo cinco años nuestra industria de la seguridad digital ha pasado de estar por detrás de países como Hungría a convertirse en el segundo miembro de la UE en cuanto a madurez, según el último Índice Global de Ciberseguridad de la Unión Internacional de las Telecomunicaciones.
+                <br> <br>
+                El cibercordero español se ha convertido en un lobo cuya ferocidad ya es reconocida incluso por expertos internacionales. “España es un centro de enorme importancia para nosotros en términos de ciberseguridad”, nos dijo hace poco la directora global de Talento y Sostenibilidad de Siemens, Judith Wiese. No en vano, aunque en 2022 el número de ciberprofesionales de nuestro país creció en un 23,3% frente 2021 (una subida que superó en más del doble a la media mundial), la demanda de expertos creció aún más rápido, con un aumento del 60% en el mismo periodo, según IDC.
+                <br> <br>
+                Es decir, aunque cada vez tengamos a más personas trabajando para reforzar nuestras defensas cibernéticas, la velocidad a la que nuestro ciberejército busca reclutar a nuevos soldados va aún más deprisa. Para el CEO de Indra, Ignacio Mataix, este desajuste representa “un excelente indicador de que el nivel de concienciación en la sociedad y en las empresas es alto y de que vamos por la buena dirección”.
+                <br> <br>
+                Por supuesto, ni nosotros ni nadie estamos 100% a salvo del enemigo digital. Cual buen jugador de póker, nuestro adversario oculta su mano mientras intenta descifrar la nuestra. Y por mucho que nuestras empresas hayan mejorado sus tácticas, también hace falta que usted se las aprenda. Ese es precisamente el objetivo del Día de Internet seguro: evitar que caiga en la última trampa del príncipe nigeriano. Seguro que ahora mismo los italianos estarían encantados de haber rechazado ese envite.
+            </p>
+    
+            
+             
+        </div>
+    </div>
+    
+    <div id="pie">
+        <div id=centro-pie>
+            <p>
+                (c)Todos los derechos reservados. Diseñado por 
+                <a href="https://github.com/EduardoVillacampa/eduardo.github.io" class="github"> Eduardo Villacampa</a>
+            </p>
+            <b>Contacta con nosotros: huescatelecomcontacto@gmail.com // 974654322</b>
+        </div>
+    </div>
+</body>
+</html>

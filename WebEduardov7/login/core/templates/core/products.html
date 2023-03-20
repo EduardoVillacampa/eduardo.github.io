@@ -1,0 +1,11 @@
+{% extends 'core/baseproducts.html' %}
+{% block content %}
+{% if request.user.is_authenticated %}
+<div id="contenidos-paginas">
+    <h4>Bienvenido {{ user.username | upper }}. Esta es nuestra sección de productos Online. También puedes encontrar estos productos en nuestras tiendas físicas de Huesca, Sabiñánigo, Barbastro, Binéfar y Monzón</h4>
+</div>
+{% endif %}
+{% endblock %}
+
+
+
